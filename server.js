@@ -4,8 +4,10 @@ const path = require('path');
 const passport = require('passport');
 // App Init
 const app = express();
+require("dotenv").config()
 
 // db
+
 require('./libs/db-connection');
 
 const PORT = process.env.PORT || 5000;
