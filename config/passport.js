@@ -12,6 +12,7 @@ passport.use(
    clientID: process.env.GOOGLE_CLIENT_ID||"612557492786-9uhanndrqhdj2c7vg5o2mlsm3urm64uj.apps.googleusercontent.com",
    clientSecret: process.env.GOOGLE_CLIENT_SECRET||"2AP2nFXW-lNtClJGFA4tgEYE",
    callbackURL: "https://shopping-cart-online.herokuapp.com/api/auth/google/callback"
+// callbackURL: "http://localhost:5000/api/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
    var userData = {
